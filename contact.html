@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Formulaire de contact</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<header  style="background-color: transparent; border-bottom: 0px; box-shadow: 0 0 0 0; position: fixed;" id="header"  >
+		<a href="#main-content" class="evitement">Aller au contenu</a>
+		<h1><strong><a href="index.html">Transport</a></strong> Accessible</h1>
+		<nav>
+		
+			<ul>
+				<li  style="font-weight: bold;"><a href="index.html">Home</a></li>
+				<li style="font-weight: bold;"><a href="Innovations.html">Innovations</a></li>
+				<li style="font-weight: bold;"><a href="contact.html">contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<body class="backgroundImage1" style="color: white;">
+		
+		
+
+		<form role="main" method="POST" action="/" name="form1">
+			<div id="vcontainer"><div id="hcontainer" >
+				<div id="content">
+			<h1  id="main-content"  style="font-weight: bold; font-size: 35px; color: black;">Formulaire de Contact</h1>
+			<p aria-label="* : Le champs est obligatoire" style="color: red;"><small>* : Le champs est obligatoire</small></p>
+			<fieldset>
+				<legend style="font-weight: bold; color: black; font-size: 15px;">
+					<span  class="etoile" > * </span>Civilité : </legend>
+	
+				<ul>
+					<li>   
+						<input type="radio" name ="civilite" id="civilite1" value="Mme"/>
+						<span for="civilite1">Mme</span>
+					</li>
+					<li>
+						<input type="radio" name ="civilite" id="civilite2" value="M"/>
+						<span for="civilite2">Mr</span> 
+					</li>
+					<li>
+						<input type="radio" name ="civilite" id="civilite3" value="Autre"/>
+						<span for="civilite3">Autre</span> 
+					</li>
+				</ul>
+			   
+			</fieldset>
+		   <br />
+			<label  style="font-weight: bold; color: black; font-size: 15px;" for="Nom">
+				<span  class="etoile">*</span> Nom :   &nbsp;
+			<input placeholder="Votre nom" type="text" id="Nom" name="Nom" required="required" aria-label="Veuillez renseigner votre nom"/>
+			<label  style="color: red;"></label>
+			</label >
+		
+			<label style="font-weight: bold; color: black; font-size: 15px; margin-right: 20px; margin-top: 15px;" for="Prenom">
+				<span class="etoile">*</span> Prénom :   &nbsp;
+			<input placeholder="Votre prénom" type="text" id="Prenom" name="Prenom" required="required" aria-label="Veuillez renseigner votre prénom"/>
+			
+			</label>
+		
+		<label style="font-weight: bold; color: black; font-size: 15px; margin-left: 95px;" for="Email">
+			<span class="etoile">*</span> E-mail :   &nbsp;
+		<input placeholder="Votre E-mail" type="email" size="35px" id="Email" name="Email" required="required" aria-label="Veuillez renseigner votre e-mail"/>
+
+	
+		</label>
+
+		<label style="font-weight: bold; color: black; font-size: 15px; margin-right: 89px;" for="dateDeNaissance"> 	
+			<span class="etoile">*</span> Date de naissance : 
+				<input placeholder="Votre Date de naissance" type="text" id="dateDeNaissance" name ="dateDeNaissance" aria-describedby="FormatDeDate" onchange="validatedate(form1.date)"  aria-label="Veuillez renseigner votre date de naissance"/>
+				<br />
+				<span id="FormatDeDate">Format : JJ/MM/AAAA</span>
+		</label>
+			
+	
+
+		<label style="font-weight: bold; color: black; font-size: 15px; margin-left: 39px;" for="message">
+			<span class="etoile">*</span> Votre Message : 
+			<br />
+		
+			<textarea placeholder="Votre message" type="text" rows="2" style="margin-left: 50px;" cols="50" aria-multiline="true" id="message" name ="message" aria-describedby="FormatDeMessage" aria-label="Veuillez renseigner votre message"></textarea>
+		
+		</label>	
+	
+		<button type="submit" style="margin-left: 20px;">Envoyer</button>
+		</div>
+		</div>
+		</form>
+		<br />
+		<br/>	<br />
+		<br/>
+		<br />
+		<br/>
+	</div>
+		
+
+	</body>
+	
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</html>
