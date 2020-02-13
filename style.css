@@ -29,7 +29,7 @@
 }
 .backgroundImage1{
    
-  background-image:  url("https://benamier.github.io/MiniSiteAccessible/images/banner.jpg");
+  /* background-image:  url("https://benamier.github.io/MiniSiteAccessible/images/banner.jpg"); */
   background-size: cover;
   line-height: 1.75;
   text-align: center;
@@ -60,4 +60,23 @@
     text-align: center;
  
   }
+
+.fil {
+  background-color: #F5F4F7;
+  padding: 10px;
+}
+
+.breadcrumb {
+    display: flex;
+    flex-direction: row;
+}
+    
+.breadcrumb li::before {
+    content: "/ ";
+}
+    
+.breadcrumb li:first-child::before {
+    content: "";
+}
+    
 
